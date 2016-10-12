@@ -12,7 +12,7 @@ The first step is to create a VPC for Openswan-VPC to connect to.
 2. Launch a new VPC using the wizard called "VPC with a Private Subnet Only and Hardware VPN Access". Use the Elastic IP as the Customer Gateway IP and select dynamic (BGP) routing.
 3. Launch an Amazon Linux instance in this VPC so you have host you can ping.
 4. Download VPN setup file in Generic format
-5. Configure the default security group to allow IPSEC (UDP/500) and BGP (TPC/179) inbound connections for both the Virtual Private Gateway outside IP addresses.
+5. Configure the default security group to allow IPSEC (UDP/500) and BGP (TCP/179) inbound connections for both the Virtual Private Gateway outside IP addresses.
 6. Replace the following variables in the User Data below with the values in the VPN setup file
 
         CGW_OUTSIDE_IP=54.200.2.26
