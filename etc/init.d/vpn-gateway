@@ -246,7 +246,7 @@ setup_network() {
 }
 
 teardown_network() {
-	ip link delete toopenswan type veth
+  ip link delete toopenswan type veth
   ip link delete veth0 type veth
   ip link delete veth1 type veth
   ip netns delete openswan
